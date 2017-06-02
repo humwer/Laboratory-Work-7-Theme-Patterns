@@ -1,0 +1,10 @@
+C:\Users\Олег\Desktop\Учёба\МП\Лаба7\ОдиночкаV2\Singleton\Singleton\bin\Debug\Singleton.exe.config
+C:\Users\Олег\Desktop\Учёба\МП\Лаба7\ОдиночкаV2\Singleton\Singleton\bin\Debug\Singleton.exe
+C:\Users\Олег\Desktop\Учёба\МП\Лаба7\ОдиночкаV2\Singleton\Singleton\bin\Debug\Singleton.pdb
+C:\Users\Олег\Desktop\Учёба\МП\Лаба7\ОдиночкаV2\Singleton\Singleton\obj\Debug\Singleton.csprojResolveAssemblyReference.cache
+C:\Users\Олег\Desktop\Учёба\МП\Лаба7\ОдиночкаV2\Singleton\Singleton\obj\Debug\Singleton.FormOne.resources
+C:\Users\Олег\Desktop\Учёба\МП\Лаба7\ОдиночкаV2\Singleton\Singleton\obj\Debug\Singleton.NewForm.resources
+C:\Users\Олег\Desktop\Учёба\МП\Лаба7\ОдиночкаV2\Singleton\Singleton\obj\Debug\Singleton.Properties.Resources.resources
+C:\Users\Олег\Desktop\Учёба\МП\Лаба7\ОдиночкаV2\Singleton\Singleton\obj\Debug\Singleton.csproj.GenerateResource.Cache
+C:\Users\Олег\Desktop\Учёба\МП\Лаба7\ОдиночкаV2\Singleton\Singleton\obj\Debug\Singleton.exe
+C:\Users\Олег\Desktop\Учёба\МП\Лаба7\ОдиночкаV2\Singleton\Singleton\obj\Debug\Singleton.pdb

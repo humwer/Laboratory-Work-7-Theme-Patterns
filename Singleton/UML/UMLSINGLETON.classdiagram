@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="d8e60810-e0a9-41bb-ac15-8457e9cd2576" name="UMLSINGLETON" linkedPackageId="491a1f95-0d51-4a94-833a-44e8282aee7e" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="1e609315-75ee-47eb-9c5f-a45ca45b4dbf" name="Singleton" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="fc0313fe-6d94-42d3-9960-bf8c1a877be6" />
+        <ownedAttributesInternal>
+          <property Id="c09ff166-9c4d-49b0-a0ed-174c32429e42" name="instance" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="373f602c-70c5-42f8-8f42-bf81dd9155f8" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="f1a60117-d0b4-46e0-badb-ff50c5382944" LastKnownName="NewForm" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="1ea9bcdd-72e5-47b0-bace-792fc2fdc181" name="NewForm" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="3595d0ae-0369-476d-ba8f-4aa0e890f829" />
+          </operation>
+          <operation Id="660903ee-9b75-45ec-b87d-f8ba89dc0a3f" name="getInstance" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c411f7fb-16d5-49c7-b6c2-ef2332c1f84a" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="99b65d04-7ed3-4269-aee4-497908b822b1" direction="Return" isUnique="false">
+                  <elementDefinition Id="7681165f-ac5e-461f-a0cd-a84348090fe7" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="f1a60117-d0b4-46e0-badb-ff50c5382944" LastKnownName="NewForm" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="f1a60117-d0b4-46e0-badb-ff50c5382944" name="NewForm" isAbstract="false" isLeaf="false" cachedFullName="NewForm">
+        <elementDefinition Id="0883591f-ae09-4540-9368-390bd52382c9" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="491a1f95-0d51-4a94-833a-44e8282aee7e" name="UML">
+    <elementDefinition Id="6b07c833-1a59-4cf5-943f-39d4120c02ab" />
+    <profileInstances>
+      <packageHasProfileInstances Id="1d9b18dd-e630-40c1-8574-0f1dd57e2ac3">
+        <profileInstance Id="69b3073a-10a5-42dc-9707-7cacee428c77" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="738c1171-a693-4f2f-9900-bab1004ff383">
+        <profileInstance Id="554e2318-83f7-4075-a805-c345ee3d326b" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>
