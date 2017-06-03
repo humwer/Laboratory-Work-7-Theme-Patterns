@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="746a333f-fbeb-4131-a618-73ee30ae65c7" name="IteratorUML" linkedPackageId="e1f90e3a-ea12-4956-8a7b-01159478606a" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="e7cc8e73-5f55-43a5-a392-ebdc58184cfc">
+      <profileInstance Id="5718a4c8-fcd0-4252-8efc-81721d5766ab" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="70801947-de92-4481-b034-3222d7f3b8a7">
+      <profileInstance Id="aa849d4d-da18-4995-aedd-b0d2e2113a48" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="26c999e8-c831-43de-ab8e-4f11eb81e787" name="Cont" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="20561ed4-fea4-4dfe-9c48-a7a59c009dfc" />
+        <ownedOperationsInternal>
+          <operation Id="efae28e7-a6cf-45a4-9ad9-a0f49ba7d5d0" name="operator ==" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="ee80d209-146f-4888-94a2-a50a92f8591f" />
+          </operation>
+          <operation Id="9bdc2a84-a1b0-4776-89ed-2ea7a6c39a4a" name="operator !=" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="09ba0a96-e94d-41ee-856a-8f19b7f6a15f" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="03122685-1b16-46e8-9584-ec28adca5057" name="ContIter" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="8892b43d-50c6-4f8d-a8f4-7a3491f03070" />
+        <ownedOperationsInternal>
+          <operation Id="0aca7749-dbb6-4327-9a93-68782a02aaa4" name="operator ++" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="79b401e4-e866-4e70-9766-0ba83da07287" />
+          </operation>
+          <operation Id="8cdae6b8-030a-4c1a-a4c5-ba497e753396" name="operator *" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="22b98f46-69ab-4034-81fa-84f014df171a" />
+          </operation>
+          <operation Id="fb61aa06-6bf3-44fd-8e72-22c976cf4b8b" name="operator" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="835c480f-471e-4402-8b54-0262c9f827ea" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="ac5c2920-f9e0-4a83-95eb-1a6ea48b0703" name=")(" direction="In" isUnique="false">
+                  <elementDefinition Id="7e95b760-10bb-4c9d-b2a7-281364c03f9c" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="6ebc831b-02b3-4abf-866e-7b115e5ab79b" name="Comparison" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="914cffeb-cb1e-46c9-b9b2-46c77c9e511e" />
+        <generalsInternal>
+          <generalization Id="1860a70e-6eff-4f0b-927d-6a95b6f35115" isSubstitutable="false">
+            <classMoniker Id="26c999e8-c831-43de-ab8e-4f11eb81e787" LastKnownName="Cont" />
+            <elementDefinition Id="9fc855c5-27a2-4321-9afc-739763908500" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association Id="a97d3071-df39-4bed-8a81-439dd61932d9" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="45e16bfe-4dbe-4b36-832e-cd5538fae694" LastKnownName="Comparator" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8ffbbb89-82c8-481b-923c-46118bec99aa" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="1134afc2-5228-4282-8b79-c464e1c88194" name="Lower">
+                      <elementDefinition Id="8ce72adb-6255-45ba-9658-425f04c534ce" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="bdfb357d-bf05-4cc6-8765-d2fd4df37b42" name="Upper">
+                      <elementDefinition Id="1b1d5a35-3653-41e7-8858-c47a043ded7c" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="22c1835e-89c9-4336-bf36-98ae078e0874" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="58cbdf8f-8d21-413c-aaed-46e2b1ed7ed0" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="e61a8b22-d12b-4863-ac53-da70cfdfcdb6" name="Lower">
+                      <elementDefinition Id="e07037c1-23bd-4e0d-b526-24be3584ccd6" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="c71cf155-a50a-4731-9944-fc932c6290e5" name="Upper">
+                      <elementDefinition Id="017b4a61-8077-4905-8808-11eb143af65a" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="7ad287da-4f9d-4b66-a4d4-af39c004ed79" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="22d3158f-84c6-4ffa-a3ea-99c0a69b9600" />
+          </association>
+        </targetEnds>
+        <ownedOperationsInternal>
+          <operation Id="0a01e34c-01ed-4224-b86a-9de0ce591821" name="operator ==" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="e8acf4fa-52da-4b29-ba16-f0312645bf81" />
+          </operation>
+          <operation Id="b19d9545-2c7f-4315-8c69-2e624c1538ee" name="operator !=" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="906d958c-830c-4e4e-8e74-c6212dd2f8e1" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="45e16bfe-4dbe-4b36-832e-cd5538fae694" name="Comparator" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="9bbe5699-daa7-451f-8810-d2cb1c4caafe" />
+        <suppliersInternal>
+          <dependency Id="b0774cec-0609-4ab1-804f-f3ec8e4c7728">
+            <classMoniker Id="6ebc831b-02b3-4abf-866e-7b115e5ab79b" LastKnownName="Comparison" />
+            <elementDefinition Id="18bb9049-4f02-4233-8313-bcf50d31e8ec" />
+          </dependency>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization Id="3eee13d0-10b1-4536-89c4-bb55db6ae5a4" isSubstitutable="false">
+            <classMoniker Id="03122685-1b16-46e8-9584-ec28adca5057" LastKnownName="ContIter" />
+            <elementDefinition Id="ce4bfe5c-0090-4380-982f-54e8fe69657f" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="e1f90e3a-ea12-4956-8a7b-01159478606a" name="UML">
+    <elementDefinition Id="ab49413e-0f6f-497e-a340-f5969632aec2" />
+  </package>
+</logicalClassDesignerModel>

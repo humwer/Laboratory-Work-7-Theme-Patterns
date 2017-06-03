@@ -1,0 +1,16 @@
+﻿Сборка начата 03.06.2017 9:06:43.
+     1>Проект "C:\Users\Олег\Desktop\Учёба\МП\Лаба7\Итератор\Iterator\Iterator\Iterator.vcxproj" в узле 2 (целевые объекты Build).
+     1>ClCompile:
+         D:\Program Files (x86)\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Release\Iterator.pch" /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Iterator.cpp
+         Iterator.cpp
+       Link:
+         D:\Program Files (x86)\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Олег\Desktop\Учёба\МП\Лаба7\Итератор\Iterator\Release\Iterator.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Олег\Desktop\Учёба\МП\Лаба7\Итератор\Iterator\Release\Iterator.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Олег\Desktop\Учёба\МП\Лаба7\Итератор\Iterator\Release\Iterator.lib" /MACHINE:X86 /SAFESEH Release\Iterator.obj
+         Release\stdafx.obj
+         Создание кода
+         Создание кода завершено
+         Iterator.vcxproj -> C:\Users\Олег\Desktop\Учёба\МП\Лаба7\Итератор\Iterator\Release\Iterator.exe
+     1>Сборка проекта "C:\Users\Олег\Desktop\Учёба\МП\Лаба7\Итератор\Iterator\Iterator\Iterator.vcxproj" завершена (целевые объекты Build).
+
+Сборка успешно завершена.
+
+Затраченное время: 00:00:01.01
