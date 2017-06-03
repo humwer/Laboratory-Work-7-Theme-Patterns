@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="4c14e9a3-d8a2-468a-8115-133fca581c0d" name="UMLADAPTER" linkedPackageId="06bdbd17-ed3d-4daa-afaa-0683d6f3d676" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <ownedCommentsInternal>
+    <comment Id="46c00049-b2b6-439c-9b88-ee5d26f08264">
+      <elementDefinition Id="8f4cb6f6-b4af-4b0f-8eb6-b3040997427e" />
+      <body>
+
+Adapter -&gt; getTemp()</body>
+      <annotatedElements>
+        <classMoniker Id="6b3cca9e-bdf0-44a7-82dd-4dfa357f5ae4" LastKnownName="Adapter" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="d9ff9497-a480-4089-9aa3-13263043b648" name="Client" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="4a2fd5d6-ce81-48c2-b143-121071b3f852" />
+        <targetEnds>
+          <association Id="ee06febe-b50f-41f5-9ea1-cd9481d207a2" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="eadd6a7e-1ddf-4650-b50c-aafc60287bc8" LastKnownName="Scale" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a512bc98-9860-47a6-a60d-a4b5e46f007a" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="753a9d94-9317-440e-abaf-7a1e6b4378ed" name="Lower">
+                      <elementDefinition Id="496725eb-143e-4bb9-a831-a11b1e38e230" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="5f0ea6a5-0c51-47a8-af22-d3edab0a3d5d" name="Upper">
+                      <elementDefinition Id="0f5da06e-f417-4a9b-b8dd-31987dc3329a" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="3ba5e078-c2eb-42ee-b2e8-75d3d6b54ade" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8e1e3bc3-0cd8-424c-b890-261dcc12f074" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="be4672e0-5111-4091-9644-e740acd2da81" name="Lower">
+                      <elementDefinition Id="df2edad2-894c-4f6b-a6e3-568d4b42957a" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="76bb865d-90f7-40cb-bb5d-94ec0f1a5f66" name="Upper">
+                      <elementDefinition Id="ca789c14-05f9-4b66-8d63-bfc8c7303aaa" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="c775fd1c-bbbd-42c7-9b36-0452a2ceb1be" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="33dca937-f3f7-4de5-a1e0-b2b2d17a97b1" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="eadd6a7e-1ddf-4650-b50c-aafc60287bc8" name="Scale" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="7657ae88-72e9-4421-847f-bda6861b60c5" />
+        <ownedOperationsInternal>
+          <operation Id="16d97a91-c517-42b5-b918-0fa36c8f6a87" name="getCTemp" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="d20d0823-da29-4dfa-8184-736926746bca" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="6b3cca9e-bdf0-44a7-82dd-4dfa357f5ae4" name="Adapter" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="aa7a1711-fad0-4456-9c13-d3e9d6923407" />
+        <generalsInternal>
+          <generalization Id="4ca06319-ac99-467f-b800-59171f0b8ed8" isSubstitutable="false">
+            <classMoniker Id="eadd6a7e-1ddf-4650-b50c-aafc60287bc8" LastKnownName="Scale" />
+            <elementDefinition Id="39f3ca3b-36d3-496c-8539-e4f951f8d376" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association Id="88ba52b1-74f3-4c21-93e3-8448ee6ff283" isDerived="false" sourceEndRoleName="Adaptee" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="a6b2593b-24af-4457-93cd-52306d1b74e8" LastKnownName="CScale" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="17b685b0-9188-489b-8344-8c4820118503" name="Adaptee" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="2c644b3b-71e7-4a04-82fc-d57f23738f45" name="Lower">
+                      <elementDefinition Id="f6f7a5e1-aef5-428d-864b-67bb4fce9c23" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="eb692568-dba4-471f-b237-e6d50405b80f" name="Upper">
+                      <elementDefinition Id="4c77d263-29fd-468c-82b1-5a8381a3ffe5" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="2ee51647-2332-4a1f-8fe8-c5a999a04746" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="844cd9a4-1f55-4c50-8165-611423440a59" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="3e5030f8-9be3-40b4-9acf-7bf1b4e03fbf" name="Lower">
+                      <elementDefinition Id="9b15d5f0-8c35-44cd-91be-eb2ebe762a77" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="a42fd059-c50a-484e-b5f5-648acdc92433" name="Upper">
+                      <elementDefinition Id="7d836d70-951f-40df-a46c-440d32e39232" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="4e6acc69-502e-45d4-8ebd-1ca0ba8533f9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="5db06ca9-abbf-4be3-bfd1-f27039989d74" />
+          </association>
+        </targetEnds>
+        <ownedOperationsInternal>
+          <operation Id="5287ae95-dc3e-49b6-b230-107454af9aae" name="getCTemp" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="11bd12eb-ae37-46dc-90ac-ccd3fbe0eab6" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="a6b2593b-24af-4457-93cd-52306d1b74e8" name="CScale" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="7a6f72fb-1e37-4a2d-a51a-d1f2b692c5c7" />
+        <ownedOperationsInternal>
+          <operation Id="50305246-9751-4642-9812-f284ef0d3d93" name="getTemp" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="34f47e93-3769-40ee-89fe-6370f6974a3b" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="06bdbd17-ed3d-4daa-afaa-0683d6f3d676" name="UML">
+    <elementDefinition Id="9baba757-d4b4-4a1c-bcb9-12e05af7b22c" />
+    <profileInstances>
+      <packageHasProfileInstances Id="e3948996-5dcd-4276-a281-4e0a1e1b4820">
+        <profileInstance Id="10dc9260-d069-4602-a7de-89c73a277c31" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="2f955add-3ad1-4437-bd05-1d71cf9a3593">
+        <profileInstance Id="43f7c866-2bd5-4bf8-a0ba-f5d67acd5c5f" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>
